@@ -1,0 +1,6 @@
+res://main.tscn
+res://player.tscn
+res://rope.tscn
+res://player_grapple.tscn
+res://chain.tscn
+res://grapple.gd

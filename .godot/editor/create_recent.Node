@@ -1,0 +1,14 @@
+RemoteTransform2D
+CollisionShape2D
+Sprite2D
+CharacterBody2D
+ParallaxLayer
+ParallaxBackground
+TileMap
+StaticBody2D
+DampedSpringJoint2D
+RigidBody2D
+Camera2D
+CanvasLayer
+Line2D
+RayCast2D

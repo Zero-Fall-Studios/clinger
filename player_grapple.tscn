@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://bvcptat5aa2vl"]
+
+[ext_resource type="Texture2D" uid="uid://dedt8keh1ikwo" path="res://assets/Lori.png" id="1_2aanv"]
+[ext_resource type="Script" path="res://player_grapple.gd" id="1_pbmx2"]
+[ext_resource type="PackedScene" uid="uid://l0xfa6mufnom" path="res://chain.tscn" id="3_bwdxq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g8wdf"]
+size = Vector2(10, 16)
+
+[node name="PlayerGrapple" type="CharacterBody2D"]
+collision_mask = 2
+script = ExtResource("1_pbmx2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 0)
+shape = SubResource("RectangleShape2D_g8wdf")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_2aanv")
+
+[node name="Chain" parent="." instance=ExtResource("3_bwdxq")]
