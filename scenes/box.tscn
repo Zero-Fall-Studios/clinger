@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://cttswhmmvy5qy"]
+
+[ext_resource type="Texture2D" uid="uid://dedt8keh1ikwo" path="res://assets/player/Lori.png" id="1_7xkmg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_extet"]
+
+[node name="box" type="RigidBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_extet")
+
+[node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D"]
+texture = ExtResource("1_7xkmg")
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+target_position = Vector2(500, 0)
